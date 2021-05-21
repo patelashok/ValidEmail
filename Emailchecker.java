@@ -10,7 +10,7 @@ public class Emailchecker {
 	 public void checkemail() {
 	        System.out.println("Enter email : ");
 	        email = SCANNER.nextLine();
-	        check = Pattern.compile("^[a-z]*$").matcher(email).matches();
+	        check = Pattern.compile("^[a-z0-9]+@[a-z]*$").matcher(email).matches();
 	        if (!check) {
 	            System.out.println("Invalid!!Please Enter your eamil.");
 	            checkemail();
